@@ -2195,8 +2195,6 @@ print("-" * 30)
 
 """
 
-!pip install gradio -q
-
 
 
 # Test the search_youtube_videos function directly with a sample query and the provided API key.
