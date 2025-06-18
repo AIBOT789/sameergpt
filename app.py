@@ -2195,7 +2195,7 @@ print("-" * 30)
 
 """
 
-!pip install gradio -q
+pip install gradio -q
 
 
 
