@@ -3,3 +3,4 @@ requests
 beautifulsoup4
 pandas
 google-api-python-client
+wikipedia-api
