@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SameerGPT</title>
+</head>
+<body>
+  <h1>Ask SameerGPT 🤖</h1>
+  <textarea id="prompt" rows="4" cols="50"></textarea><br>
+  <button onclick="askBot()">Ask</button>
+  <p id="response"></p>
+
+  <script>
+    async function askBot() {
+      const prompt = document.getElementById("prompt").value;
+      const response = await fetch("/ask", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({prompt})
+      });
+      const data = await response.json();
+      document.getElementById("response").innerText = data.reply;
+    }
+  </script>
+</body>
+</html>
