@@ -172,7 +172,8 @@ The function to scrape science fiction books from Project Gutenberg has been def
 # Example usage to test the function
 science_fiction_books_df = get_gutenberg_science_fiction_books()
 if science_fiction_books_df is not None:
-    display(science_fiction_books_df.head())
+    print(science_fiction_books_df.head())
+
 else:
     print("Could not retrieve science fiction books.")
 
