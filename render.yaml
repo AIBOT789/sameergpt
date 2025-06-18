@@ -1,0 +1,9 @@
+# Render deployment configuration for a Python web service
+# You must have a web server (like Flask or FastAPI) listening on 0.0.0.0:$PORT
+# Example assumes Flask. Adjust if using something else.
+
+build:
+  commands:
+    - pip install -r requirements.txt
+
+start: python app.py
