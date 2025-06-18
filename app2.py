@@ -2256,7 +2256,7 @@ if YOUTUBE_API_KEY == 'YOUR_API_KEY':
 else:
     print("YouTube API key is set.")
 
-!pip install wikipedia-api -q
+
 
 import wikipediaapi
 import requests # Import requests for making API calls for images
